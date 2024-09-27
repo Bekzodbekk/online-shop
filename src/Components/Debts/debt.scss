@@ -6,9 +6,9 @@
 
     .search {
         input {
-            font-size: 30px;
+            font-size: 20px;
             padding: 14px 20px;
-            border-radius: 20px;
+            border-radius: 10px;
         }
     }
 
@@ -53,11 +53,12 @@
             .top {
                 display: flex;
                 justify-content: space-between;
-                border-bottom: 3px dashed $gray;
+                border-bottom: 2px dashed $gray;
                 padding-bottom: 20px;
 
                 & > *{
-                    font-size: 30px;
+                    font-size: 25px;
+                    
                 }
             }
             .bottom{
@@ -66,7 +67,7 @@
                 justify-content: space-between;
                 
                 & > *{
-                    font-size: 30px;
+                    font-size: 25px;
                 }
             }
 
