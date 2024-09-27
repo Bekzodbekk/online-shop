@@ -1,0 +1,38 @@
+@import "../../../../vars";
+
+.add_debt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #dc3d4550;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .add_debt_container{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        background-color: #fff;
+        width: 800px;
+        height: fit-content;
+        padding: 30px;
+        border-radius: 30px;
+
+        input{
+            font-size: 25px;
+        }
+        .btns{
+            display: flex;
+            column-gap: 15px;
+            margin-top: 30px;
+            .btn{
+                width: 100%;
+                font-size: 25px;
+            }
+        }
+    }
+}

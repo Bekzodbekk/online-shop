@@ -1,0 +1,56 @@
+@import "../../../../vars";
+
+.sell_product {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #30875464;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .sell_product_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px;
+        background-color: #fff;
+        height: 300px;
+        width: 600px;
+        border-radius: 20px;
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+
+            .info_txt {
+                display: flex;
+                align-items: center;
+
+                font-size: 32px;
+
+                .color_box {
+                    height: 30px;
+                    width: 30px;
+                    margin-left: 20px;
+                    border-radius: 3px;
+                    display: inline-block;
+                }
+            }
+        }
+
+        .btns {
+            display: flex;
+            column-gap: 30px;
+
+            .btn {
+                width: 100%;
+                font-size: 25px;
+            }
+        }
+    }
+}

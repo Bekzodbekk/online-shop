@@ -1,0 +1,95 @@
+@import "../../vars";
+
+.product_container {
+    width: 100%;
+    margin: 30px 40px;
+
+    .search {
+        .search_input {
+            height: 65px;
+            font-size: 25px;
+        }
+    }
+
+    .product_items {
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        height: 90%;
+        gap: 20px;
+        margin-top: 20px;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+        .product_item {
+            display: flex;
+            background-color: #fff;
+            padding: 20px 30px;
+            height: fit-content;
+            column-gap: 40px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: .2s linear;
+
+            &:hover{
+                background-color: $purple;
+
+                .img{
+                    img{
+                        border: 4px solid #fff;
+                    }
+                }
+
+                .info{
+                    .top{
+                        border-color: #fff;
+                    }
+                    .top h1, .bottom h1{
+                       color: #fff;
+                   }
+                }
+            }
+
+
+            .img {
+                img {
+                    border-radius: 15px;
+                    height: 210px;
+                }
+            }
+
+            .info {
+                width: 100%;
+
+                .top {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 3px dashed $gray;
+                    padding-bottom: 5px;
+                }
+
+                .bottom {
+                    display: flex;
+                    padding-top: 15px;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    &>* {
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        gap: 10px;
+                    }
+
+                    &>*>* {
+                        font-size: 25px;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}
