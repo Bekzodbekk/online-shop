@@ -4,7 +4,6 @@ import ProductPage from '../Products/Pages/ProductPage/ProductPage';
 import Product from '../Products/Product';
 import Sidebar from '../Sidebar/Sidebar';
 import './app.scss';
-import DebtItem from '../Debts/DebtItem/DebtItem';
 import DebtPage from '../Debts/DebtPage/DebtPage';
 
 function App() {
