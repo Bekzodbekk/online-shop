@@ -1,4 +1,5 @@
 import React from 'react';
+import "./addProductCount.scss"
 
 const AddCountProduct = ({ isOpen, toggleWindow }) => { // Prop orqali oynani boshqarish
     const handleOutsideClick = (e) => {
