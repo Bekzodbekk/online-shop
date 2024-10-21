@@ -1,8 +1,6 @@
 import React from 'react'
 
 const FinishProductColors = ({dict}) => {
-    console.log(dict);
-    
     return (
         <div className="colors">
             <div style={{"background": dict["color"]}} className="color"></div>
