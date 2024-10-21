@@ -12,7 +12,7 @@ const Sidebar = () => {
         <div className='sidebar'>
             <ul className="menus">
                 <li className={active === "dashboard" ? "active" : ""} onClick={() => activeHandle("dashboard")}>
-                    <Link aria-disabled={true} to="/">
+                    <Link to="/dashboard">
                         <span><i className="fa-solid fa-chart-pie"></i></span>
                         Dashboard
                     </Link>
@@ -30,8 +30,8 @@ const Sidebar = () => {
                     </Link>
                 </li>
                 <li className={active === "finished" ? "active" : ""} onClick={() => activeHandle("finished")}>
-                    <Link aria-disabled={true} to="/">
-                        <span><i className="fa-solid fa-book-open"></i></span>
+                    <Link to="/finished/products">
+                        <span><i className="fa-solid fa-ban"></i></span>
                         Finished
                     </Link>
                 </li>

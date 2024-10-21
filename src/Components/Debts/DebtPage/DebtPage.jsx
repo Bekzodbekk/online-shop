@@ -21,7 +21,6 @@ const DebtPage = () => {
             </div>
             <div className="btns">
                 <button className='btn btn-success'>Qarzni o'chirish</button>
-                <button className='btn btn-danger'>Bekor Qilish!</button>
             </div>
         </div>
     </div>

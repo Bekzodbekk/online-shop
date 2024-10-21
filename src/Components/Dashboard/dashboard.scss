@@ -1,0 +1,56 @@
+@import "../../vars";
+
+.dashboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        width: fit-content;
+        border-radius: 15px;
+        padding: 40px 100px;
+        cursor: pointer;
+
+        .title{
+            margin-bottom: 50px;
+        }
+
+        .items{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            // justify-items: center;
+            row-gap: 30px;
+            column-gap: 50px;
+
+            .total{
+                background-color: #FDE2E5;
+            }
+            .solds{
+                background-color: #FFF4DE;
+            }
+            .body_price{
+                background-color: #F3E8FF;
+            }
+            .target{
+                background-color: #DBF9E7;
+            }
+
+            & > *{
+                h1{
+                    font-size: 30px;
+                }
+                h3{
+                    font-size: 20px;
+                }
+                padding: 20px 40px;
+                border-radius: 8px;
+            }
+        }
+    }
+}

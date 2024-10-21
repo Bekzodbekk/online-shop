@@ -7,6 +7,7 @@ const Product = () => {
     <div className='product_container'>
         <div className="search">
             <input className='form-control search_input' placeholder='Malumot yozing...' type="text" />
+            <button className='btn btn-success'>Add Product</button>
         </div>
         <div className="product_items">
             <ProductItem />
